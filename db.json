@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Meet Didi",
+      "day": "Feb 5th at 3:30 PM",
+      "reminder": true
+    },
+    {
+      "text": "BaskeBall Practise",
+      "day": "Friday at 6 PM",
+      "reminder": true,
+      "id": 2
+    },
+    {
+      "text": "Meet for lunch",
+      "day": "Friday evening",
+      "reminder": false,
+      "id": 3
+    }
+  ]
+}
