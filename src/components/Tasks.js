@@ -1,3 +1,5 @@
+// Tasks component
+
 import Task from "./Task";
 
 const Tasks = ({ tasks, onDelete, onToggle }) => {

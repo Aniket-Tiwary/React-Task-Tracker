@@ -1,3 +1,5 @@
+// Footer component
+
 import { Link, useLocation } from "react-router-dom";
 const Footer = () => {
   const location = useLocation();

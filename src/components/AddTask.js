@@ -1,3 +1,5 @@
+// Add task component
+
 import { useState } from "react";
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState("");

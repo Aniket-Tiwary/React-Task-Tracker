@@ -1,3 +1,5 @@
+// Header Component at the last commented out section is how to implement CSS in js(just for learning) something I was experimenting while building this project
+
 import PropTypes from "prop-types";
 import Button from "./Button";
 import { useLocation } from "react-router-dom";

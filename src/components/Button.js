@@ -1,3 +1,5 @@
+// Button component below some prototypes are written just for learning purpose
+
 import Proptypes from "prop-types";
 const Button = ({ color, text, onClick }) => {
   return (
