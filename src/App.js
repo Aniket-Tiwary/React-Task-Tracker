@@ -25,21 +25,21 @@ function App() {
 
   // Fetch Tasks
   const fetchTasks = async () => {
-    const res = await fetch("https://task-tracker-react-db.herokuapp.com/Aniket-Tiwary/task-tracker-json-server/tasks");
+    const res = await fetch("http://localhost:5000/tasks");
     const data = await res.json();
     return data;
   };
 
   // Fetch a specific Task
   const fetchTask = async (id) => {
-    const res = await fetch(`https://task-tracker-react-db.herokuapp.com/Aniket-Tiwary/task-tracker-json-server/tasks/${id}`);
+    const res = await fetch(`http://localhost:5000/tasks/${id}`);
     const data = await res.json();
     return data;
   };
 
   // Delete a Task
   const deleteTask = async (id) => {
-    await fetch(`https://task-tracker-react-db.herokuapp.com/Aniket-Tiwary/task-tracker-json-server/tasks/${id}`, { method: "DELETE" });
+    await fetch(`http://localhost:5000/tasks/${id}`, { method: "DELETE" });
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
@@ -52,7 +52,7 @@ function App() {
     const updatedTask = { ...taskToTggle, reminder: !taskToTggle.reminder };
 
     // task is updated in the json-server
-    const res = await fetch(`https://task-tracker-react-db.herokuapp.com/Aniket-Tiwary/task-tracker-json-server/tasks/${id}`, {
+    const res = await fetch(`http://localhost:5000/tasks/${id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
@@ -72,7 +72,7 @@ function App() {
   // Add Task
   const addTask = async (task) => {
     // new task is sent to json-server
-    const res = await fetch("https://task-tracker-react-db.herokuapp.com/Aniket-Tiwary/task-tracker-json-server/tasks", {
+    const res = await fetch("http://localhost:5000/tasks", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
