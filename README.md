@@ -10,9 +10,6 @@ To run the project locally, in the project directory you should run:
 
 #### To run the project on the dev server
 
-App is deployed using Netlify.\
-Link to which is : [https://task-tracker-react-single-page.netlify.app/](https://task-tracker-react-single-page.netlify.app/) .
-
 ## App has basic functionalities like :
 * Add Task
 * Delete Task
@@ -24,4 +21,3 @@ Link to which is : [https://task-tracker-react-single-page.netlify.app/](https:/
 * JSX Rules
 * Splitting into components
 * Routing
-* Deploying an React App on netlify
